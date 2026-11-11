@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="460.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mp3.mp3_controller">
+   <children>
+      <Label fx:id="songDisplay" alignment="CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="14.0" prefHeight="266.0" prefWidth="398.0" style="-fx-background-color: black;" text="PLAYING SONG..." textAlignment="CENTER" textFill="#fca3a3">
+         <font>
+            <Font name="Bradley Hand ITC" size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="playBtn" layoutX="147.0" layoutY="315.0" mnemonicParsing="false" onAction="#play" prefHeight="60.0" prefWidth="66.0" text="PLAY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="pauseBtn" layoutX="230.0" layoutY="315.0" mnemonicParsing="false" onAction="#pause" prefHeight="60.0" prefWidth="66.0" text="PAUSE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="prevBtn" layoutX="40.0" layoutY="315.0" mnemonicParsing="false" onAction="#previous" prefHeight="60.0" prefWidth="66.0" text="Prev">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="fowBtn" layoutX="358.0" layoutY="315.0" mnemonicParsing="false" onAction="#foward" prefHeight="60.0" prefWidth="66.0" text="Fow">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ProgressBar fx:id="songProgress" layoutX="40.0" layoutY="236.0" onDragDetected="#songProgress" prefHeight="18.0" prefWidth="379.0" progress="0.0" />
+      <Slider fx:id="volumeSlider" layoutX="159.0" layoutY="397.0" onDragDetected="#volume" prefHeight="26.0" prefWidth="141.0" value="50.0" />
+   </children>
+</AnchorPane>
