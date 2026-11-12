@@ -1,0 +1,17 @@
+# Java / Maven build output
+/target/
+*.class
+*.log
+
+# IDE files
+/.idea/
+/.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project music files (keep the folder, ignore the tracks)
+music/*
+!music/README.txt
